@@ -11,7 +11,7 @@ Route::group([
     'prefix'     => Admin::config('admin.route.prefix'),
     'middleware' => Admin::config('admin.route.middleware'),
 ], function (Router $router) {
-    // 账本记录
-    $router->resource('account', \App\Admin\Controllers\AccountController::class);
+    // 账单
+    $router->resource('bill_data', \App\Admin\Controllers\BillDataController::class);
 
 });
